@@ -1,0 +1,19 @@
+<%- include('./partials/header.ejs') %>
+<% if (messages.error) { %> <%= messages.error %> <% } %> <% if (message.length)
+{ %> <%= message %> <% } %>
+
+
+<div class="login-page">
+  <div class="form">
+    
+    <form class="login-form sprint" action="/login" method="POST">
+      <h1 id="LoginText">Login</h1>
+      <% if (messages.error) { %> <%= messages.error %> <% } %> <% if
+      (message.length) { %> <%= message %> <% } %>
+      <input type="text" type="email" id="email" name="email" placeholder="Email" required/>
+      <input type="password" id="password" name="password" placeholder="Password" required/>
+      <button id="SignIn" type="submit">Login</button>
+      <h2>Don't have an account?</h2>
+      <p class="message"><a href="/register">Create Account</p>
+    </form>
+  </div>

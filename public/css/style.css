@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&family=Roboto&family=Russo+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+:root {
+  --shadow: 0 0.063rem 0.438rem rgba(105, 105, 105, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+body {
+  background-image: linear-gradient(to right, #e2dfdf, #647e74);
+  line-height: 1.5em;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1.25em;
+}
+
+.main-nav ul {
+  display: grid;
+  gap: 0.938em;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #598173;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.313em;
+  box-shadow: var(--shadow);
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  background-color: white;
+  color: black;
+  letter-spacing: 0.00125em;
+}
+
+@media (max-width: 1070px) {
+  .banner {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25em;
+    padding: 1.875em 1.875em;
+  }
+
+  .main-nav ul {
+    display: grid;
+    gap: 0.625em;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.login-page {
+  width: 22.5em;
+  padding: 5% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 22.5em;
+  margin: 0 auto 3.125em;
+  padding: 3.125em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.2), 0 0.313em 0.313em 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #ffffffd9;
+  width: 100%;
+  border: 0;
+  margin: 0 0 0.9375em;
+  padding: 0.9375em;
+  box-sizing: border-box;
+  font-size: 0.875em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffffd2;
+  width: 100%;
+  border: 0;
+  padding: 0.9375em;
+  color: #505050f1;
+  font-size: 0.875em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.form button:hover,
+.form button:active {
+  letter-spacing: 0.08em;
+  background: #ffffff;
+}
+
+.form button:focus {
+  box-shadow: 0 0 1.25em #ffffff, 0 0 1.25em #ffffff;
+  background-color: #ffffff;
+  border-radius: 0.625em;
+  opacity: 1;
+  letter-spacing: 0.09em;
+}
+
+.form input:focus {
+  box-shadow: 0 0 1.25em #fff, 0 0 1.25em #fff;
+  border-radius: 0.625em;
+  opacity: 1;
+}
+
+.form span {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  opacity: 0.8;
+  padding: 0.625em;
+  width: 100%;
+  margin: 0 0 0.9375em;
+}
+
+.form h2 {
+  font-size: 0.85em;
+  font-weight: 400;
+  margin: 1.6em 0 0;
+  letter-spacing: 0.03em;
+  color: #616161c1;
+  font-family: "Roboto", sans-serif;
+}
+
+.form .message {
+  margin: 0.1em 0 0;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.form .message a {
+  color: #616161;
+  text-decoration: none;
+}
+
+.form .message a:hover {
+  letter-spacing: 0.02em;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  color: #616161d8;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 18.75em;
+  margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 3.125em auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 0.9375em;
+  padding: 0;
+  font-size: 2.25em;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 0.75em;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #ef3a91;
+}
+
+body,
+.sprint::before {
+  background: url("https://cdn.myportfolio.com/ae622a3c-9158-41cc-a44d-afdb423692bd/e506d0da-90a3-447b-bd9c-67053bb9ea48_rwc_0x427x1920x1440x1920.png?h=2780f43c5600874cb4d9ead36e2e741e");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sprint::before {
+  filter: blur(0.625em);
+  content: "";
+  position: absolute;
+  left: -0.625em;
+  top: -0.625em;
+  width: calc(100% + 1.25em);
+  height: calc(100% + 1.25em);
+  z-index: -1;
+}
+
+.sprint::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+  border: 0.0625em solid #fff;
+  background: #fff;
+  /* background-image: url(https://img.freepik.com/premium-vector/pink-valentines-background-with-shiny-stars-illustration_567746-1457.jpg?size=626&ext=jpg); */
+}
+
+#LoginText {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  margin-bottom: 0.9em;
+  font-size: 4em;
+  text-shadow: #e8b3c3c3 0.0625em 0 0.625em;
+  margin-top: 0.05em;
+}
+
+#RegisterText1 {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  font-size: 4em;
+  text-shadow: #e8b3c3 0.0625em 0 0.625em;
+  margin-bottom: 0.8em;
+  margin-top: 0.05em;
+}
+
+#RegisterText2 {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  font-size: 3.8em;
+  text-shadow: #e8b3c3b5 0.0625em 0 0.625em;
+  margin-bottom: 0.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffffd2;
+  width: 20%;
+  border: 0;
+  padding: 0.9375em;
+  color: #505050f1;
+  font-size: 0.875em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover,
+button:active {
+  letter-spacing: 0.08em;
+  background: #ffffff;
+}
+
+button:focus {
+  box-shadow: 0 0 1.25em #ffffff, 0 0 1.25em #ffffff;
+  background-color: #ffffff;
+  border-radius: 0.625em;
+  opacity: 1;
+  letter-spacing: 0.09em;
+}
+
+#HeaderTitle {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  font-size: 3em;
+  text-shadow: #e8b3c3f8 0.0625em 0 0.625em;
+  opacity: 100%;
+}
+
+.banner {
+  background-color: #ffffffbf;
+  box-shadow: 0 2em 3em #ffffffbf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875em 3.125em;
+  font-family: "Russo One", sans-serif;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background: #ffffff86;
+  max-width: 60%;
+  margin: 4em auto auto;
+  margin-bottom: 3em;
+  padding: 3.125em;
+  text-align: center;
+  box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.119), 0 0.313em 0.313em 0 rgba(0, 0, 0, 0.153);
+  opacity: 0.8;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffffd2;
+  width: 90%;
+  border: 0;
+  padding: 1.2em;
+  color: #505050f1;
+  font-size: 0.875em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn:focus,.btn:hover,
+.btn:active {
+  box-shadow: 0 0 1.25em #ffffff, 0 0 1.25em #ffffff;
+  background-color: #ffffff;
+  border-radius: 0.625em;
+  color: #505050ba;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.header-nav ul {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+  padding: 0;
+}
+
+.header-nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: #ffffff;
+  color: #505050f1;
+  font-size: 0.9em;
+  padding: 0.8em;
+  text-transform: uppercase;
+}
+
+.btnAlt {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffffd2;
+  width: 35%;
+  border: 0;
+  padding: 1em;
+  color: #505050f1;
+  font-size: 0.9em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btnAlt:focus,.btnAlt:hover,
+.btnAlt:active {
+  box-shadow: 0 0 1.25em #ffffff, 0 0 1.25em #ffffff;
+  background-color: #ffffff;
+  border-radius: 0.625em;
+  color: #505050c5;
+  letter-spacing: 0.09em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #4e44494e; /* Set the color and style of the line */
+  margin: 20px 0; /* Adjust the spacing around the line */
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+  color: #212121;
+  font-weight: 500;
+}
+
+b {
+  font-family: "Roboto", sans-serif;
+  color: #353535e0;
+  font-weight: 400;
+}
+
+select {
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  font-size: 0.875em;
+  margin: 0 0 0.9375em;
+  margin-top: 2em;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 0.9375em;
+  box-sizing: border-box;
+  background: #fffffff0;
+  outline: 0;
+  text-align: left;
+  border-style:solid;
+  border-image: linear-gradient(to right, #ebb4c3, #d7b5e4) 1;
+  color: #505050f1;
+  margin-left: 2em;
+
+}
+
+.select-prompt {
+  text-align: center;
+  color: #50505078;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #fffffff0;
+  margin-top: 2em;
+  height: auto;
+  width: 40%;
+  border-width: 1px;
+  margin: 0 0 0.9375em;
+  padding: 0.9375em;
+  box-sizing: border-box;
+  font-size: 0.875em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-image: linear-gradient(to right, #ebb4c3, #d7b5e4) 1;
+}
+
+input:focus {
+box-shadow: 0 0 1.25em #ffffff, 0 0 1.25em #ffffff;
+background-color: #ffffff;
+border-radius: 0.625em;
+transition: text-shadow 0.2s ease-in-out;
+border:0;
+}
+
+.contentSolid {
+  position: relative;
+  z-index: 1;
+  background: #ffffff86;
+  max-width: 60%;
+  margin: 4em auto auto;
+  margin-bottom: 3em;
+  padding: 1.4em 3.125em 3.125em;
+  text-align: center;
+  box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.119), 0 0.313em 0.313em 0 rgba(0, 0, 0, 0.153);
+  opacity: 1;
+}
+
+#searchButton {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #fffffff8;
+    width: 40%;
+    border: 0;
+    padding: 1.2em;
+    color: #545454;
+    font-size: 1.2em;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 0.2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  #searchButton:hover {
+    letter-spacing: 0.15em;
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #545454dc;
+  }
+
+  h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    color: #545454db;
+  }
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #545454dc;
+}
+
+.inline-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inline-container .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.inline-container .left-section h4, .inline-container .left-section h6 {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.inline-container .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.inline-container .right-section h4, .inline-container .right-section h5 {
+  margin: 0;
+  padding: 0 10px;
+}
+
+#SearchTitle {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  font-size: 3em;
+  text-shadow: #e8b3c3f8 0.0625em 0 0.625em;
+  opacity: 100%;
+  margin-top: 1em;
+}
